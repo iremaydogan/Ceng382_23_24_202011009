@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iremb\\OneDrive\\Desktop\\CENG382_LAB1\\Ceng382_23_24_s_202011009\\lab4\\lab4.csproj": {}
+    "c:\\Users\\iremb\\OneDrive\\Desktop\\lab5\\Ceng382_23_24_s_202011009\\lab4\\lab4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iremb\\OneDrive\\Desktop\\CENG382_LAB1\\Ceng382_23_24_s_202011009\\lab4\\lab4.csproj": {
+    "c:\\Users\\iremb\\OneDrive\\Desktop\\lab5\\Ceng382_23_24_s_202011009\\lab4\\lab4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iremb\\OneDrive\\Desktop\\CENG382_LAB1\\Ceng382_23_24_s_202011009\\lab4\\lab4.csproj",
+        "projectUniqueName": "c:\\Users\\iremb\\OneDrive\\Desktop\\lab5\\Ceng382_23_24_s_202011009\\lab4\\lab4.csproj",
         "projectName": "lab4",
-        "projectPath": "C:\\Users\\iremb\\OneDrive\\Desktop\\CENG382_LAB1\\Ceng382_23_24_s_202011009\\lab4\\lab4.csproj",
+        "projectPath": "c:\\Users\\iremb\\OneDrive\\Desktop\\lab5\\Ceng382_23_24_s_202011009\\lab4\\lab4.csproj",
         "packagesPath": "C:\\Users\\iremb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iremb\\OneDrive\\Desktop\\CENG382_LAB1\\Ceng382_23_24_s_202011009\\lab4\\obj\\",
+        "outputPath": "c:\\Users\\iremb\\OneDrive\\Desktop\\lab5\\Ceng382_23_24_s_202011009\\lab4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

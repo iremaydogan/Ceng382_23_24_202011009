@@ -2,13 +2,15 @@
 @model IndexModel
 @{
 ViewData["Title"] = "Home page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+}</h1>
+<p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 <main>
+    <link rel="stylesheet" href="~/css/lab5.css" asp-append-version="true" />
+
+    <div class="lab5"> <button> <a class="nav-link text-dark" asp-area="" asp-page="/Lab5">LAB5</a>
+    </div>
+    </button>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
@@ -147,4 +149,5 @@ ViewData["Title"] = "Home page";
             </tbody>
         </table>
     </div>
+      
 </main>
