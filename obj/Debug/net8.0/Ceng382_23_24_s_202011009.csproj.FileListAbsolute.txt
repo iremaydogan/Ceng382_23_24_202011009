@@ -1,0 +1,15 @@
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\bin\Debug\net8.0\Ceng382_23_24_s_202011009.exe
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\bin\Debug\net8.0\Ceng382_23_24_s_202011009.deps.json
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\bin\Debug\net8.0\Ceng382_23_24_s_202011009.runtimeconfig.json
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\bin\Debug\net8.0\Ceng382_23_24_s_202011009.dll
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\bin\Debug\net8.0\Ceng382_23_24_s_202011009.pdb
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\obj\Debug\net8.0\Ceng382_23_24_s_202011009.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\obj\Debug\net8.0\Ceng382_23_24_s_202011009.AssemblyInfoInputs.cache
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\obj\Debug\net8.0\Ceng382_23_24_s_202011009.AssemblyInfo.cs
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\obj\Debug\net8.0\Ceng382_23_24_s_202011009.csproj.CoreCompileInputs.cache
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\obj\Debug\net8.0\Ceng382_23_24_s_202011009.sourcelink.json
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\obj\Debug\net8.0\Ceng382_23_24_s_202011009.dll
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\obj\Debug\net8.0\refint\Ceng382_23_24_s_202011009.dll
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\obj\Debug\net8.0\Ceng382_23_24_s_202011009.pdb
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\obj\Debug\net8.0\Ceng382_23_24_s_202011009.genruntimeconfig.cache
+C:\Users\iremb\OneDrive\Desktop\lab6\Ceng382_23_24_s_202011009\obj\Debug\net8.0\ref\Ceng382_23_24_s_202011009.dll
