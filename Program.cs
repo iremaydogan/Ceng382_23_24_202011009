@@ -10,17 +10,10 @@ class Program
 
     static void Main(string[] args)
     {
-        // Haftanın günleri ve saat aralıkları
         string[] daysOfWeek = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
         string[] hours = { "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00" };
-
-        // Rastgele rezervasyonlar oluştur
         PopulateReservationsWithRandomData(15, daysOfWeek, hours);
-
-        // 5 rastgele rezervasyonu sil
         DeleteRandomReservations(5);
-
-        // Rezervasyonları tablo şeklinde yazdır
         PrintReservationsTable(allReservations, "Mevcut Rezervasyonlar");
         PrintReservationsTable(deletedReservations, "Silinen Rezervasyonlar");
     }
