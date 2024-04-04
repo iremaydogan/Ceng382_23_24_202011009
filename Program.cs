@@ -1,23 +1,67 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 class Program
 {
+    static List<Reservation> allReservations = new List<Reservation>();
+    static List<Reservation> deletedReservations = new List<Reservation>();
+    static Random random = new Random();
+
     static void Main(string[] args)
     {
-        ReservationHandler reservationHandler = new ReservationHandler();
-        Room room1 = new Room("R001", "Conference Room", 10);
+        // Haftanın günleri ve saat aralıkları
+        string[] daysOfWeek = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
+        string[] hours = { "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00" };
 
-        // Rezervasyon ekleme
-        Reservation reservation1 = new Reservation(DateTime.Now, DateTime.Today, "Alice", room1);
-        reservationHandler.AddReservation(reservation1);
+        // Rastgele rezervasyonlar oluştur
+        PopulateReservationsWithRandomData(15, daysOfWeek, hours);
 
-        // Rezervasyonları gösterme
-        reservationHandler.DisplayWeeklySchedule();
+        // 5 rastgele rezervasyonu sil
+        DeleteRandomReservations(5);
 
-        // Rezervasyon silme
-        reservationHandler.DeleteReservation(reservation1);
+        // Rezervasyonları tablo şeklinde yazdır
+        PrintReservationsTable(allReservations, "Mevcut Rezervasyonlar");
+        PrintReservationsTable(deletedReservations, "Silinen Rezervasyonlar");
+    }
 
-        // Güncel rezervasyonları gösterme
-        reservationHandler.DisplayWeeklySchedule();
+    static void PopulateReservationsWithRandomData(int numberOfReservations, string[] days, string[] hours)
+    {
+        for (int i = 0; i < numberOfReservations; i++)
+        {
+            allReservations.Add(new Reservation
+            {
+                Time = DateTime.Parse(hours[random.Next(hours.Length)]),
+                Date = DateTime.Now.AddDays(random.Next(days.Length)),
+                ReserverName = $"Müşteri {i + 1}",
+                Room = new Room { RoomId = $"R{i + 1}", RoomName = $"Oda {i + 1}", Capacity = 2 }
+            });
+        }
+    }
+
+    static void DeleteRandomReservations(int numberOfDeletions)
+    {
+        for (int i = 0; i < numberOfDeletions; i++)
+        {
+            int indexToDelete = random.Next(allReservations.Count);
+            deletedReservations.Add(allReservations[indexToDelete]);
+            allReservations.RemoveAt(indexToDelete);
+        }
+    }
+
+    static void PrintReservationsTable(List<Reservation> reservations, string title)
+    {
+        Console.WriteLine($"\n{title}:");
+        Console.WriteLine(new string('-', 60));
+        Console.WriteLine("{0,-20} {1,-10} {2,-15} {3,-10}", "Zaman", "Tarih", "Rezerve Eden", "Oda Adı");
+        foreach (var reservation in reservations.OrderBy(r => r.Date).ThenBy(r => r.Time))
+        {
+            Console.WriteLine("{0,-20} {1,-10:dd/MM/yyyy} {2,-15} {3,-10}",
+                reservation.Time.ToString("HH:mm"),
+                reservation.Date,
+                reservation.ReserverName,
+                reservation.Room.RoomName);
+        }
+        Console.WriteLine(new string('-', 60));
     }
 }
