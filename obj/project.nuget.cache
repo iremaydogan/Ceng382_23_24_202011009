@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "k1HlavGlpObCKXNVzV6JKmba/WhsJMjK5mJj1wdg2WHa9wvAFo/Ln4dMPZGF/+VMRDkWxRp/NPvXsnW8Sp4Ubw==",
+  "dgSpecHash": "88TpyiGEomcsqKtdvYJGfLt6H/zH5TMKWAgZngTmxG81GtyKGSEOKbuejrjNZ9zG7ptBrVhG2ZqlVxfQb9PwGg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\iremb\\OneDrive\\Desktop\\lab6\\Ceng382_23_24_s_202011009\\Ceng382_23_24_s_202011009.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\iremb\\OneDrive\\Desktop\\lab7\\Ceng382_23_24_s_202011009\\Ceng382_23_24_s_202011009.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\iremb\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\iremb\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

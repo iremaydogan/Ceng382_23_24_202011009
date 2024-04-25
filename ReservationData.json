@@ -1,0 +1,52 @@
+[
+  {
+    "Time": "2024-04-14T01:40:12.6279477+03:00",
+    "Date": "2024-04-14T01:40:12.6279477+03:00",
+    "ReserverName": "John Doe",
+    "Room": {
+      "Id": "1",
+      "Name": "Conference Room",
+      "Capacity": 10
+    }
+  },
+  {
+    "Time": "2024-04-14T01:40:22.3331281+03:00",
+    "Date": "2024-04-14T01:40:22.3331281+03:00",
+    "ReserverName": "John Doe",
+    "Room": {
+      "Id": "1",
+      "Name": "Conference Room",
+      "Capacity": 10
+    }
+  },
+  {
+    "Time": "2024-04-14T01:43:10.9324231+03:00",
+    "Date": "2024-04-14T01:43:10.9324231+03:00",
+    "ReserverName": "John Doe",
+    "Room": {
+      "Id": "1",
+      "Name": "Conference Room",
+      "Capacity": 10
+    }
+  },
+  {
+    "Time": "2024-04-14T23:44:24.3840572+03:00",
+    "Date": "2024-04-14T23:44:24.3840572+03:00",
+    "ReserverName": "John Doe",
+    "Room": {
+      "Id": "1",
+      "Name": "Conference Room",
+      "Capacity": 10
+    }
+  },
+  {
+    "Time": "2024-04-14T23:45:51.1710647+03:00",
+    "Date": "2024-04-14T23:45:51.1710647+03:00",
+    "ReserverName": "John Doe",
+    "Room": {
+      "Id": "1",
+      "Name": "Conference Room",
+      "Capacity": 10
+    }
+  }
+]
