@@ -1,0 +1,24 @@
+﻿@page
+@model MyApp.Namespace.ShowRoomModel
+@{
+}
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">RoomName</th>
+            <th scope="col">Capacity</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var abc in Model.Rooms)
+        {
+        <tr>
+            <!-- <td>@abc.RoomName</td>
+            <td>@abc.Capacity</td> -->
+            <td data-label="RoomName">@abc.RoomName</td>
+            <td data-label="Capacity">@abc.Capacity</td>
+        </tr>
+        }
+    </tbody>
+</table>
