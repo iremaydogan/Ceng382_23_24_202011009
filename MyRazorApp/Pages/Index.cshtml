@@ -1,10 +1,44 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="full-page-container d-flex justify-content-center align-items-center">
+    <div class="card p-4">
+        <h1 class="display-4 text-center">Welcome</h1>
+        <p class="text-center">Learn about <a href="https://learn.microsoft.com/aspnet/core" class="text-info">building
+                Web apps with ASP.NET Core</a>.</p>
+    </div>
 </div>
+
+<style>
+    body {
+        background-color: rgba(255, 205, 205, 0.9);
+    }
+
+    .full-page-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        background-color: #ffe0e0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        /* Sayfa boyunca yayılması için genişlik ayarı */
+    }
+
+    .text-info {
+        color: #ff5733;
+        /* Açık turuncu renk */
+    }
+
+    .btn-primary {
+        background-color: #ff5733;
+        border-color: #ff5733;
+    }
+</style>

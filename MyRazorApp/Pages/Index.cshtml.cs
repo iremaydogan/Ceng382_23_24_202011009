@@ -1,19 +1,15 @@
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-
-namespace MyRazorApp.Pages;
-
-public class IndexModel : PageModel
+namespace MyRazorApp.Pages
 {
-    private readonly ILogger<IndexModel> _logger;
-
-    public IndexModel(ILogger<IndexModel> logger)
+    [Authorize(Policy = "RequireLoggedIn")]
+    public class IndexModel : PageModel
     {
-        _logger = logger;
-    }
+        public string UserName { get; private set; }
 
-    public void OnGet()
-    {
-
+        public void OnGet()
+        {
+            UserName = User.Identity?.Name ?? "Guest";
+        }
     }
 }

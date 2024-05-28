@@ -1,24 +1,67 @@
 ﻿@page
-@model MyApp.Namespace.ShowRoomModel
+@model MyRazorApp.Pages.ShowRoomModel
 @{
+ViewData["Title"] = "Show Room";
 }
-<table class="table mt-5">
-    <thead>
-        <tr>
-            <th scope="col">RoomName</th>
-            <th scope="col">Capacity</th>
 
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var abc in Model.Rooms)
-        {
-        <tr>
-            <!-- <td>@abc.RoomName</td>
-            <td>@abc.Capacity</td> -->
-            <td data-label="RoomName">@abc.RoomName</td>
-            <td data-label="Capacity">@abc.Capacity</td>
-        </tr>
-        }
-    </tbody>
-</table>
+<div class="full-page-container d-flex justify-content-center align-items-center">
+    <div class="card p-4">
+        <h2 class="text-center">Show Room</h2>
+        <table class="table mt-5">
+            <thead>
+                <tr class="bg-info text-white">
+                    <th scope="col">Room Name</th>
+                    <th scope="col">Capacity</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var room in Model.Rooms)
+                {
+                <tr>
+                    <td>@room.RoomName</td>
+                    <td>@room.Capacity</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: rgba(255, 205, 205, 0.9);
+    }
+
+    .full-page-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        background-color: #ffe0e0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        /* Sayfa boyunca yayılması için genişlik ayarı */
+    }
+
+    .text-info {
+        color: #ff5733;
+        /* Açık turuncu renk */
+    }
+
+    .btn-primary {
+        background-color: #ff5733;
+        border-color: #ff5733;
+    }
+
+    .bg-info {
+        background-color: #ff5733 !important;
+    }
+
+    .text-white {
+        color: #fff !important;
+    }
+</style>

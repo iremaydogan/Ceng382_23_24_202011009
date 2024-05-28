@@ -1,20 +1,27 @@
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MyRazorApp.Data;
 using MyRazorApp.Models;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace MyApp.Namespace
+namespace MyRazorApp.Pages
 {
+    [Authorize]
     public class ShowRoomModel : PageModel
     {
-        public Ceng382Context rooms = new();
-        public List<Room> Rooms { get; set; } = default!;
+        private readonly Ceng382Context _context;
+
+        public ShowRoomModel(Ceng382Context context)
+        {
+            _context = context;
+        }
+
+        public List<Room> Rooms { get; set; }
+
         public void OnGet()
         {
-            // LINQ query to retrieve items where IsDeleted is false
-            Rooms = (from item in rooms.Room
-                         //   where item.IsDeleted == false
-                     select item).ToList();
+            Rooms = _context.Rooms.ToList();
         }
     }
 }
