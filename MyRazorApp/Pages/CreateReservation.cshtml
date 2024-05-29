@@ -15,9 +15,14 @@ Layout = "~/Pages/Shared/_Layout.cshtml";
                 <span asp-validation-for="Input.RoomId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Input.ReservationDate" class="text-info"></label>
-                <input asp-for="Input.ReservationDate" class="form-control" type="datetime-local" />
-                <span asp-validation-for="Input.ReservationDate" class="text-danger"></span>
+                <label asp-for="Input.StartDate" class="text-info"></label>
+                <input asp-for="Input.StartDate" class="form-control" type="date" />
+                <span asp-validation-for="Input.StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.EndDate" class="text-info"></label>
+                <input asp-for="Input.EndDate" class="form-control" type="date" />
+                <span asp-validation-for="Input.EndDate" class="text-danger"></span>
             </div>
             <button type="submit" class="btn btn-primary mt-3">Create</button>
         </form>

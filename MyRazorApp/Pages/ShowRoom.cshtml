@@ -7,6 +7,20 @@ ViewData["Title"] = "Show Room";
 <div class="full-page-container d-flex justify-content-center align-items-center">
     <div class="card p-4">
         <h2 class="text-center">Show Room</h2>
+
+        <form method="post" class="mb-4">
+            <div class="form-group">
+                <label for="roomName">Filter by Room Name</label>
+                <input type="text" id="roomName" name="RoomName" class="form-control" value="@Model.RoomName" />
+            </div>
+            <div class="form-group">
+                <label for="roomCapacity">Filter by Room Capacity</label>
+                <input type="number" id="roomCapacity" name="RoomCapacity" class="form-control"
+                    value="@Model.RoomCapacity" />
+            </div>
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </form>
+
         <table class="table mt-5">
             <thead>
                 <tr class="bg-info text-white">
@@ -44,12 +58,10 @@ ViewData["Title"] = "Show Room";
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         width: 80%;
-        /* Sayfa boyunca yayılması için genişlik ayarı */
     }
 
     .text-info {
         color: #ff5733;
-        /* Açık turuncu renk */
     }
 
     .btn-primary {

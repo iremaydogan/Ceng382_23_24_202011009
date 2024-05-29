@@ -5,28 +5,76 @@ ViewData["Title"] = "Show Reservations";
 Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
-<div class="full-page-container d-flex justify-content-center align-items-center">
+<div class="container mt-5">
     <div class="card p-4">
         <h2 class="text-center">Show Reservations</h2>
-        <table class="table mt-5">
-            <thead>
-                <tr class="bg-info text-white">
-                    <th scope="col">Room Name</th>
-                    <th scope="col">Reservation Date</th>
-                    <th scope="col">User</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var reservation in Model.Reservations)
-                {
-                <tr>
-                    <td>@reservation.Room.RoomName</td>
-                    <td>@reservation.ReservationDate.ToShortDateString()</td>
-                    <td>@reservation.UserId</td>
-                </tr>
-                }
-            </tbody>
-        </table>
+
+        @if (!string.IsNullOrEmpty(Model.StatusMessage))
+        {
+        <div class="alert alert-success" role="alert">
+            @Model.StatusMessage
+        </div>
+        }
+
+        <form method="post" class="mb-4">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="roomName">Filter by Room Name</label>
+                    <input type="text" id="roomName" name="RoomName" class="form-control" value="@Model.RoomName" />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="filterStartDate">Start Date</label>
+                    <input type="date" id="filterStartDate" name="FilterStartDate" class="form-control"
+                        value="@Model.FilterStartDate?.ToString(" yyyy-MM-dd")" />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="filterEndDate">End Date</label>
+                    <input type="date" id="filterEndDate" name="FilterEndDate" class="form-control"
+                        value="@Model.FilterEndDate?.ToString(" yyyy-MM-dd")" />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="roomCapacity">Filter by Room Capacity</label>
+                    <input type="number" id="roomCapacity" name="RoomCapacity" class="form-control"
+                        value="@Model.RoomCapacity" />
+                </div>
+                <div class="form-group col-md-12">
+                    <button type="submit" class="btn btn-primary mt-4">Filter</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="table-responsive">
+            <table class="table mt-2">
+                <thead>
+                    <tr class="bg-info text-white">
+                        <th scope="col">Room Name</th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">End Date</th>
+                        <th scope="col">User</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var reservation in Model.Reservations)
+                    {
+                    <tr>
+                        <td>@reservation.Room.RoomName</td>
+                        <td>@reservation.StartDate.ToShortDateString()</td>
+                        <td>@reservation.EndDate.ToShortDateString()</td>
+                        <td>@reservation.UserId</td>
+                        <td>
+                            <form method="post" asp-page-handler="Delete" asp-route-id="@reservation.Id"
+                                onsubmit="return confirm('Are you sure you want to delete this reservation?');">
+                                <button type="submit" class="btn btn-sm btn-danger delete-button">
+                                    <i class="fas fa-trash"></i> Delete
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 
@@ -35,18 +83,15 @@ Layout = "~/Pages/Shared/_Layout.cshtml";
         background-color: rgba(255, 205, 205, 0.9);
     }
 
-    .full-page-container {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .container {
+        max-width: 1000px;
+        margin: auto;
     }
 
     .card {
         background-color: #ffe0e0;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        width: 80%;
     }
 
     .text-info {
@@ -64,5 +109,49 @@ Layout = "~/Pages/Shared/_Layout.cshtml";
 
     .text-white {
         color: #fff !important;
+    }
+
+    .table-responsive {
+        margin-top: 20px;
+    }
+
+    .table {
+        width: 100%;
+        margin-bottom: 1rem;
+        color: #212529;
+    }
+
+    .table th,
+    .table td {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+    }
+
+    .table th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+    }
+
+    .table td {
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .btn-sm {
+        font-size: 0.875rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .fas {
+        margin-right: 0.2rem;
+    }
+
+    .delete-button {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+    .alert {
+        margin-bottom: 20px;
     }
 </style>

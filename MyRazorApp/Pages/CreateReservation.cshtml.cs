@@ -5,10 +5,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MyRazorApp.Data;
 using MyRazorApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace MyRazorApp.Pages
 {
@@ -29,7 +30,8 @@ namespace MyRazorApp.Pages
         public class InputModel
         {
             public int RoomId { get; set; }
-            public DateTime ReservationDate { get; set; }
+            public DateTime StartDate { get; set; }
+            public DateTime EndDate { get; set; }
         }
 
         public async Task OnGetAsync()
@@ -50,7 +52,8 @@ namespace MyRazorApp.Pages
             var reservation = new Reservation
             {
                 RoomId = Input.RoomId,
-                ReservationDate = Input.ReservationDate,
+                StartDate = Input.StartDate,
+                EndDate = Input.EndDate,
                 UserId = userIdClaim // Kullanıcı kimliğini buradan alıyoruz
             };
 
