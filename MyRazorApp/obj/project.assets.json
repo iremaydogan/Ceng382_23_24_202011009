@@ -8921,11 +8921,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\iremb\\OneDrive\\Desktop\\lab11_3\\Ceng382_23_24_s_202011009\\MyRazorApp\\MyRazorApp.csproj",
+      "projectUniqueName": "C:\\Users\\iremb\\OneDrive\\Desktop\\lab12\\Ceng382_23_24_s_202011009\\MyRazorApp\\MyRazorApp.csproj",
       "projectName": "MyRazorApp",
-      "projectPath": "C:\\Users\\iremb\\OneDrive\\Desktop\\lab11_3\\Ceng382_23_24_s_202011009\\MyRazorApp\\MyRazorApp.csproj",
+      "projectPath": "C:\\Users\\iremb\\OneDrive\\Desktop\\lab12\\Ceng382_23_24_s_202011009\\MyRazorApp\\MyRazorApp.csproj",
       "packagesPath": "C:\\Users\\iremb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iremb\\OneDrive\\Desktop\\lab11_3\\Ceng382_23_24_s_202011009\\MyRazorApp\\obj\\",
+      "outputPath": "C:\\Users\\iremb\\OneDrive\\Desktop\\lab12\\Ceng382_23_24_s_202011009\\MyRazorApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

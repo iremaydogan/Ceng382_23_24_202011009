@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x3SZlSeNw10a6hMPwbmqzc9Wt033/e/nmnzimeKieKBG/NagXfUJNMvr8TA4E65+phDQvntEImFAe6nLRtqU3Q==",
+  "dgSpecHash": "BgjK8TG1a88r2UXKvpbStuHR2la8QueD/10fU3Asg/HEx5uRSdICI9mFJOtpeyIcU0xTpiU/m/9hdWruLP6tnA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\iremb\\OneDrive\\Desktop\\lab11_3\\Ceng382_23_24_s_202011009\\MyRazorApp\\MyRazorApp.csproj",
+  "projectFilePath": "C:\\Users\\iremb\\OneDrive\\Desktop\\lab12\\Ceng382_23_24_s_202011009\\MyRazorApp\\MyRazorApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iremb\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\iremb\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

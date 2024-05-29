@@ -1,0 +1,68 @@
+@page
+@model MyRazorApp.Pages.ShowReservationsModel
+@{
+ViewData["Title"] = "Show Reservations";
+Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div class="full-page-container d-flex justify-content-center align-items-center">
+    <div class="card p-4">
+        <h2 class="text-center">Show Reservations</h2>
+        <table class="table mt-5">
+            <thead>
+                <tr class="bg-info text-white">
+                    <th scope="col">Room Name</th>
+                    <th scope="col">Reservation Date</th>
+                    <th scope="col">User</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var reservation in Model.Reservations)
+                {
+                <tr>
+                    <td>@reservation.Room.RoomName</td>
+                    <td>@reservation.ReservationDate.ToShortDateString()</td>
+                    <td>@reservation.UserId</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: rgba(255, 205, 205, 0.9);
+    }
+
+    .full-page-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        background-color: #ffe0e0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 80%;
+    }
+
+    .text-info {
+        color: #ff5733;
+    }
+
+    .btn-primary {
+        background-color: #ff5733;
+        border-color: #ff5733;
+    }
+
+    .bg-info {
+        background-color: #ff5733 !important;
+    }
+
+    .text-white {
+        color: #fff !important;
+    }
+</style>

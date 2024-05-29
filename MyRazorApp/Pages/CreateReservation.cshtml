@@ -1,23 +1,23 @@
-﻿@page
-@model MyRazorApp.Pages.CreateRoomModel
+@page
+@model MyRazorApp.Pages.CreateReservationModel
 @{
-ViewData["Title"] = "Create Room";
-
+ViewData["Title"] = "Create Reservation";
+Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
 <div class="full-page-container d-flex justify-content-center align-items-center">
     <div class="card p-4">
-        <h2 class="text-center">Create Room</h2>
+        <h2 class="text-center">Create Reservation</h2>
         <form method="post">
             <div class="form-group">
-                <label asp-for="Input.RoomName" class="text-info"></label>
-                <input asp-for="Input.RoomName" class="form-control" />
-                <span asp-validation-for="Input.RoomName" class="text-danger"></span>
+                <label asp-for="Input.RoomId" class="text-info"></label>
+                <select asp-for="Input.RoomId" class="form-control" asp-items="Model.RoomList"></select>
+                <span asp-validation-for="Input.RoomId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Input.Capacity" class="text-info"></label>
-                <input asp-for="Input.Capacity" class="form-control" />
-                <span asp-validation-for="Input.Capacity" class="text-danger"></span>
+                <label asp-for="Input.ReservationDate" class="text-info"></label>
+                <input asp-for="Input.ReservationDate" class="form-control" type="datetime-local" />
+                <span asp-validation-for="Input.ReservationDate" class="text-danger"></span>
             </div>
             <button type="submit" class="btn btn-primary mt-3">Create</button>
         </form>
@@ -41,12 +41,10 @@ ViewData["Title"] = "Create Room";
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         width: 80%;
-        /* Sayfa boyunca yayılması için genişlik ayarı */
     }
 
     .text-info {
         color: #ff5733;
-        /* Açık turuncu renk */
     }
 
     .btn-primary {

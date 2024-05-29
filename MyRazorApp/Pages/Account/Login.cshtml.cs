@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using MyRazorApp.Models;
 using MyRazorApp.Data;
 
 namespace MyRazorApp.Pages.Account
