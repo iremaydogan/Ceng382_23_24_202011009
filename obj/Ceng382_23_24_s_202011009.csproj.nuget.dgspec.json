@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iremb\\OneDrive\\Desktop\\lab6\\Ceng382_23_24_s_202011009\\Ceng382_23_24_s_202011009.csproj": {}
+    "C:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_202011009\\Ceng382_23_24_s_202011009.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iremb\\OneDrive\\Desktop\\lab6\\Ceng382_23_24_s_202011009\\Ceng382_23_24_s_202011009.csproj": {
+    "C:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_202011009\\Ceng382_23_24_s_202011009.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iremb\\OneDrive\\Desktop\\lab6\\Ceng382_23_24_s_202011009\\Ceng382_23_24_s_202011009.csproj",
+        "projectUniqueName": "C:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_202011009\\Ceng382_23_24_s_202011009.csproj",
         "projectName": "Ceng382_23_24_s_202011009",
-        "projectPath": "C:\\Users\\iremb\\OneDrive\\Desktop\\lab6\\Ceng382_23_24_s_202011009\\Ceng382_23_24_s_202011009.csproj",
-        "packagesPath": "C:\\Users\\iremb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iremb\\OneDrive\\Desktop\\lab6\\Ceng382_23_24_s_202011009\\obj\\",
+        "projectPath": "C:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_202011009\\Ceng382_23_24_s_202011009.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_202011009\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\iremb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
